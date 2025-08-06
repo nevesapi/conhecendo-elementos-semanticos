@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+
+<body>
+    <h2>Trabalhado com imagens</h2>
+
+    <!-- src = source(fonte, origem do arquivo).
+            alt = alternative(alternativo). O alt serve para a acessibilidade pois quando o a imagem não é carregada, o navegador busca esse texto alternativo, que serve como uma descrição da imagem. Quanto mais detalhes esse texto alternativo possuir, melhor a acessibilidade e experiência do usuário 
+        -->
+    <img src="satoro.jpg" alt="satoro gojou careca olhando fixamente para você" height="300">
+
+    <!-- é possível controlar a altura e a largura da imagem pelo HTML 
+        height(altura) = representa a altura da imagem
+        width(largura) = representa a largura/comprimento da imagem 
+    -->
+
+    <!-- É possível utilizar imagens externas -->
+    <img src="https://plus.unsplash.com/premium_photo-1753080951637-ffbdee3c44c9?q=80&w=1112&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        alt="Elemento com efeito de vidro e uma mensagem de erro" width="300" height="300">
+    <hr>
+
+    <figure>
+        <img src="satoro.jpg" alt="satoro gojou careca olhando fixamente para você">
+        <figcaption>Personagem do anime Jujutsu Kaisen - Gege Akutami</figcaption>
+    </figure>
+
+
+    <!-- Complemento sobre as imagens 28/07/2025 -->
+    <picture> 
+        <source srcset="satoro.jpg" type="image/jpg">
+        <source srcset="satoro.png" type="image/png">
+        <source srcset="satoro.jpeg" type="image/jpeg">
+
+        <!-- fallback = imagem padrão caso as imagens anteriores falhem ou não sejam suportadas -->
+        <img src="satoro.jpg" alt="Satoro gojou careca">
+    </picture>
+</body>
+
+</html>
